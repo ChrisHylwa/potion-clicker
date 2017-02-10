@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+
+.loc {
+    text-align: center;
+}
+
+.i_slot {
+    float: left;
+    width: 64px;
+    height: 64px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#rb-store {
+    background-image: url("images/redberry.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bb-store {
+    background-image: url("images/blueberry.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#i_clickers {
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#p_clickers {
+}
+
+#upgrades {
+    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+}
