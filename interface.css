@@ -8,6 +8,7 @@
 
 .i_slot {
     float: left;
+    border-radius: 100%;
     width: 64px;
     height: 64px;
     margin: 10px;
@@ -15,10 +16,17 @@
     border: 1px solid black;
 }
 
+#shared_r {
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 #rb-store {
     background-image: url("images/redberry.png");
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 
 #bb-store {
@@ -29,7 +37,7 @@
 
 #i_clickers {
     float: left;
-    margin-left: 5%;
+    margin-left: 2.5%;
     margin-right: 5%;
 }
 
