@@ -3,11 +3,15 @@
 <html>
 	<head>
         <title>Potion Clicker</title>
+		<meta charset = "utf-8"/>
 		<link rel="stylesheet" type="text/css" href="interface.css" />
         <script type="text/javascript" src="main.js"></script>
 	</head>
 	<body>
         <h1 class = "loc"> Potion Laboratory </h1>
+		<div id = "shared_r">
+			Gold: <span id="gold">0</span> 
+		</div>
         <div id="i_clickers">
             <h1> Ingredients </h1>
             <div class="i_slot" id="rb-store" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -30,15 +34,19 @@
             <h1> Auto-clickers </h1>
             <br />
             <button onclick="buyRBGather()">Buy Red Berry Harvester</button>
-            Cost:
+			x<span id="rbg-num">0</span>
+			<br />
+            Gatherer Cost: <span id="rbg-cost">10</span> gold
             <br />
-            <button onclick="buyRBGather()">Buy Red Berry Harvester</button>
-            Cost:
+            <button onclick="buyBBGather()">Buy Blue Berry Harvester</button>
+			x<span id="bbg-num">0</span>
+			<br />
+            Gatherer Cost: <span id="bbg-cost">10</span> gold
             <br />
             <button onclick="buyCursor()">Buy Auto-Brewer v1.0</button>
             Cursors: <span id="cursors">0</span>
             <br />
-            Cursor Cost: <span id="cursorCost">10</span>
+            Cursor Cost: <span id="cursorCost">100</span> gold
         </div>
 
         <div id="p_clickers">
