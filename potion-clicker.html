@@ -7,21 +7,53 @@
         <script type="text/javascript" src="main.js"></script>
 	</head>
 	<body>
+        <h1 class = "loc"> Potion Laboratory </h1>
         <div id="i_clickers">
+            <h1> Ingredients </h1>
+            <div class="i_slot" id="rb-store" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="images/redberry.png" draggable="true" ondragstart="drag(event)" id="drag1" width="64" height="64">
+            </div>
+            Red Berries: <span id="r_berries">0</span>
+            <br />
+            <button onclick="rbClick(1)">Gather Red Berries</button>
+            <br />
+            <div class="i_slot" id="bb-store" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="images/blueberry.png" draggable="true" ondragstart="drag(event)" id="drag2" width="64" height="64">
+            </div>
+            Blue Berries: <span id="b_berries">0</span>
+            <br />
+            <button onclick="bbClick(1)">Gather Blue Berries</button>
+            <br />
+        </div>
+
+        <div id="upgrades">
+            <h1> Auto-clickers </h1>
+            <br />
+            <button onclick="buyRBGather()">Buy Red Berry Harvester</button>
+            Cost:
+            <br />
+            <button onclick="buyRBGather()">Buy Red Berry Harvester</button>
+            Cost:
+            <br />
+            <button onclick="buyCursor()">Buy Auto-Brewer v1.0</button>
+            Cursors: <span id="cursors">0</span>
+            <br />
+            Cursor Cost: <span id="cursorCost">10</span>
         </div>
 
         <div id="p_clickers">
-            <button onclick="potionClick(1)">Click Me!</button>
+            <h1> Potions </h1>
+
+            <div class="i_slot" id="ingredient1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+            <div class="i_slot" id="ingredient2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+            <br />
+            <button onclick="potionClick(1)">Make a Potion!</button>
     		<br />
     		Potions: <span id="pots">0</span>
         </div>
 
-        <div id="upgrades">
-            <button onclick="buyCursor()">Buy Cursor</button>
-		    <br />
-    		Cursors: <span id="cursors">0</span>
-    		<br />
-    		Cursor Cost: <span id="cursorCost">10</span>
-        </div>
+        <hr>
     </body>
 </html>

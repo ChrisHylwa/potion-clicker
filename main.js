@@ -12,6 +12,19 @@ function drop(ev) {
     ev.target.appendChild(document.getElementById(data));
 }
 
+var r_berries = 0;
+var b_berries = 0;
+
+function rbClick(number) {
+    r_berries = r_berries + number;
+    document.getElementById("r_berries").innerHTML = r_berries;
+}
+
+function bbClick(number) {
+    b_berries = b_berries + number;
+    document.getElementById("b_berries").innerHTML = b_berries;
+}
+
 var pots = 0;
 
 function potionClick(number){
