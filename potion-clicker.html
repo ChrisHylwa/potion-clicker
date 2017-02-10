@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <link href="interface.css" type="text/css" rel="stylesheet"/>
-    <script type="text/javascript" src="main.js"></script>
-  </head>
+	<head>
+        <title>Potion Clicker</title>
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+        <script type="text/javascript" src="main.js"></script>
+	</head>
+	<body>
+        <div id="i_clickers">
+        </div>
+
+        <div id="p_clickers">
+            <button onclick="potionClick(1)">Click Me!</button>
+    		<br />
+    		Potions: <span id="pots">0</span>
+        </div>
+
+        <div id="upgrades">
+            <button onclick="buyCursor()">Buy Cursor</button>
+		    <br />
+    		Cursors: <span id="cursors">0</span>
+    		<br />
+    		Cursor Cost: <span id="cursorCost">10</span>
+        </div>
+    </body>
 </html>
